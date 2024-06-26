@@ -170,7 +170,7 @@
   
   /* Set a style for the submit/register button */
   .registerbtn {
-    background-color: #04AA6D;
+    background-color: #748a86;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -213,7 +213,7 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #748a86;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -223,7 +223,7 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #748a86;
   }
   
   /* Add a background color and some padding around the form */
@@ -311,7 +311,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: hsl(0, 0%, 26%);
   color: white;
 }
 
