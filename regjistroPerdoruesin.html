@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Shopping</title>
+
+
+
+</head>
+<body>
+
+    <style>
+        .login-block {
+		margin: 0 auto;
+		width: 580px;
+		padding: 40px;
+		background: #fff;
+		border-radius: 5px;
+		border-top: 5px solid #2181b9;
+		border-right: 1px solid #2181b9;
+		border-left: 1px solid #2181b9;
+		border-bottom: 1px solid #2181b9;
+	}
+
+.shto-perdoruesin 
+{
+	position: relative;
+	padding-top: 40px;
+}
+
+.shto-perdoruesin h1 
+{
+	text-align: center;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.shto-perdoruesin input
+{
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #2181b9;
+	border-radius: 5px;
+	outline: none;
+	padding: 0 20px 0 10px;
+	margin-bottom: 20px;
+}
+
+.shto-perdoruesin input:focus
+{
+	border: 1px solid #2181b9;
+}
+
+.shto-perdoruesin button
+{
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #2181b9;
+	border-radius: 5px;
+	outline: none;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background: #2181b9;
+	padding: 0 20px 0 10px;
+}
+
+.login-block a
+	{
+		text-align: center;
+		font-size: 18px;
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-decoration: none;
+		color: #2181b9;
+		margin-left: 220px;
+	}
+
+    </style>
+	<nav>
+	   	<div class = "navigation">
+			<a href = 'shfaqproduktet.html' class='logo'>GAMES- ONLINE SHOPPING</a>
+		   	<ul class='menu'>
+				<li><a href='shfaqproduktet.html'>Ballina</a></li>
+				<li><a href='puzzles.html'>Puzzles</a></li>
+				<li><a href='videogames.html'>Video games</a></li>
+				<li><a href='boardgames.html'>Board Games</a></li>
+		   	</ul>
+		   	
+		   	<div class = 'right-menu'>
+		   		<a href='login.html'><i class='bx bx-user'></i>Login</a>
+		   		<a href='#'><i class='bx bx-shopping-bag'></i>Shporta</a>
+		   	</div>
+	   	</div>
+   	</nav>
+	
+	<div class= "shto-perdoruesin">
+		<form method="post" action="RegjistroPerdoruesin" id="registrationForm">
+			<div class="login-block">
+				<h1>Regjistro Perdoruesin</h1>
+				<input type="text" placeholder="Emri Perdoruesit" name="emri" required/>
+				<input type="text" placeholder="Mbiemri Perdoruesit" name="mbiemri" required/>
+				<input type="text" placeholder="Adresa" name="adresa" required/>
+				<input type="email" placeholder="Email" name="email" required/>
+				<input type="text" placeholder="Telefoni" name="tel" required/>
+				<input type="text" placeholder="Emri Perdoruesit" name="emriPerdoruesit" required/>
+				<input type="password" placeholder="Fjalekalimi" name="fjalekalimi" required/>
+				<button type="submit">Regjistro</button>
+				<br/><br/>
+				<a href="login.html">Login?</a>
+			</div>
+			<p id="errorMessage" class="error-message"></p>
+		</form>
+		<script src="js/perdoruesin.js"></script>
+	</div>
+	
+	
+	<footer>
+		<span class='copyright'>
+			Copyright 2024 - Online Shopping
+		</span>
+	</footer>
+</body>
+</html>
