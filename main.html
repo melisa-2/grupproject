@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital School Project</title>
     <link rel="stylesheet" href="css/style(1).css">
+    <link rel="stylesheet" href="css/lightslider.css">
 </head>
 <body>
     
@@ -14,10 +15,11 @@
     <nav class="navbar">
         <div class="logo"><h1>ZARA</h1></div>
         <ul class="menu">
-            <li>   <a class="active" href="#home">Home</a></li>
+            <li><a href="main.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
             <li> <a href="contact.html">Contact</a></li>
             <li><a href="login.html">Login</a></li>
+            <li><a href="shtoProduktin.html">Shporta</a></li>
         </ul>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -29,8 +31,47 @@
         <button>Shop Now</button>
     </section>
 
+    <ul id = 'adaptive' class = 'cs-hidden'>
+        <li class = 'item-a'>
+        <div class = 'full-slider-box f-slide-1'>
+         <img src="ft/R.jfif" alt="">
+        <div class = 'f-slider-text-container'>
+        <div class='f-slider-text'>
+        <span>Oferte</span>
+        <strong> 20% Zbritje</strong>
+        </div>
+        </div>
+        </div>
+        </li>
+        
+     <li class = 'item-b'>
+        <div class = 'full-slider-box f-slide-2'>
+         <img src="ft/R (1).jfif" alt="">
+        <div class = 'f-slider-text-container'>
+        <div class='f-slider-text'>
+        <span>Oferte</span>
+        <strong> 50% Zbritje</strong>
+        </div>
+        </div>
+        </div>
+        </li>
+
+     <li class = 'item-c'>
+        <div class = 'full-slider-box f-slide-3'>
+         <img src="ft/R (2).jfif" alt="">
+        <div class = 'f-slider-text-container'>
+        <div class='f-slider-text'>
+        <span>Oferte</span>
+        <strong> 80% Zbritje</strong>
+        </div>
+        </div>
+        </div>
+        </li>
+        </ul>
+
     <h1 class="pheading">Our Latest Products</h1>
 
+    
     <section class="sec">
         <div class="products">
 
@@ -41,7 +82,12 @@
                 <div class="title">Dress</div>
                 <div class="box">
                     <div class="price">30$</div>
-                    <button class="btn">Buy Now</button>
+                    <button class="btn" onclick="showAlert()">Buy Now</button>
+                    <script>
+                        function showAlert() {
+                            alert("Produkti u shtua ne shporte!");
+                        }
+                        </script>
                 </div>
             </div>
 
@@ -51,7 +97,12 @@
                 <div class="title">T-Shirt</div>
                 <div class="box">
                     <div class="price">15$</div>
-                    <button class="btn">Buy Now</button>
+                    <button class="btn" onclick="showAlert()">Buy Now</button>
+                    <script>
+                        function showAlert() {
+                            alert("Produkti u shtua ne shporte!");
+                        }
+                        </script>
                 </div>
             </div>
 
@@ -61,14 +112,33 @@
                 <div class="title">Jeans</div>
                 <div class="box">
                     <div class="price">25$</div>
-                    <button class="btn">Buy Now</button>
+                    <button class="btn" onclick="showAlert()">Buy Now</button>
+                    <script>
+                        function showAlert() {
+                            alert("Produkti u shtua ne shporte!");
+                        }
+                        </script>
                 </div>
             </div>
 
         </div>
     </section>
 
-
+    <script src="js/Jquery.js"></script>
+    <script src="js/lightslider.js"></script>
 
 </body>
 </html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+              $('#adaptive').lightSlider({
+                          adaptiveHeight:true,
+                      auto:true,
+                  item:1,
+                          slideMargin:0,
+                      loop:true,
+                      pauseOnHover: true
+           });});
+                
+     </script>
